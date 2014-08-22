@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VkLoginViewController1.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

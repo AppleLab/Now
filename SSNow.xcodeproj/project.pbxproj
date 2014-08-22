@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		237526C419A71EDA0032F738 /* VkloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237526C319A71EDA0032F738 /* VkloginViewController.m */; };
-		237526C719A71F7A0032F738 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237526C619A71F7A0032F738 /* ViewController.m */; };
+		237526D319A737140032F738 /* VkLoginViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 237526D219A737140032F738 /* VkLoginViewController1.m */; };
+		237526D619A739DD0032F738 /* NSString+StringBetween.m in Sources */ = {isa = PBXBuildFile; fileRef = 237526D519A739DD0032F738 /* NSString+StringBetween.m */; };
+		237526DC19A748C10032F738 /* VKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237526DB19A748C10032F738 /* VKViewController.m */; };
 		23DB6D4C19A5E73B009ACE5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DB6D4B19A5E73B009ACE5A /* Foundation.framework */; };
 		23DB6D4E19A5E73B009ACE5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DB6D4D19A5E73B009ACE5A /* CoreGraphics.framework */; };
 		23DB6D5019A5E73B009ACE5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DB6D4F19A5E73B009ACE5A /* UIKit.framework */; };
@@ -40,10 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		237526C219A71EDA0032F738 /* VkloginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VkloginViewController.h; sourceTree = "<group>"; };
-		237526C319A71EDA0032F738 /* VkloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VkloginViewController.m; sourceTree = "<group>"; };
-		237526C519A71F7A0032F738 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		237526C619A71F7A0032F738 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		237526D119A737140032F738 /* VkLoginViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VkLoginViewController1.h; sourceTree = "<group>"; };
+		237526D219A737140032F738 /* VkLoginViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VkLoginViewController1.m; sourceTree = "<group>"; };
+		237526D419A739DD0032F738 /* NSString+StringBetween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringBetween.h"; sourceTree = "<group>"; };
+		237526D519A739DD0032F738 /* NSString+StringBetween.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringBetween.m"; sourceTree = "<group>"; };
+		237526DA19A748C10032F738 /* VKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKViewController.h; sourceTree = "<group>"; };
+		237526DB19A748C10032F738 /* VKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKViewController.m; sourceTree = "<group>"; };
 		23DB6D4819A5E73B009ACE5A /* SSNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DB6D4B19A5E73B009ACE5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		23DB6D4D19A5E73B009ACE5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,10 +142,12 @@
 				23DB6D6619A5E73B009ACE5A /* Main.storyboard */,
 				23DB6D6919A5E73B009ACE5A /* Images.xcassets */,
 				23DB6D5219A5E73B009ACE5A /* Supporting Files */,
-				237526C219A71EDA0032F738 /* VkloginViewController.h */,
-				237526C319A71EDA0032F738 /* VkloginViewController.m */,
-				237526C519A71F7A0032F738 /* ViewController.h */,
-				237526C619A71F7A0032F738 /* ViewController.m */,
+				237526D119A737140032F738 /* VkLoginViewController1.h */,
+				237526D219A737140032F738 /* VkLoginViewController1.m */,
+				237526D419A739DD0032F738 /* NSString+StringBetween.h */,
+				237526D519A739DD0032F738 /* NSString+StringBetween.m */,
+				237526DA19A748C10032F738 /* VKViewController.h */,
+				237526DB19A748C10032F738 /* VKViewController.m */,
 			);
 			path = SSNow;
 			sourceTree = "<group>";
@@ -277,13 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				237526C719A71F7A0032F738 /* ViewController.m in Sources */,
+				237526D619A739DD0032F738 /* NSString+StringBetween.m in Sources */,
 				23DB6D6219A5E73B009ACE5A /* DataViewController.m in Sources */,
 				23DB6D5C19A5E73B009ACE5A /* AppDelegate.m in Sources */,
 				23DB6D6519A5E73B009ACE5A /* ModelController.m in Sources */,
 				23DB6D5819A5E73B009ACE5A /* main.m in Sources */,
+				237526DC19A748C10032F738 /* VKViewController.m in Sources */,
 				23DB6D5F19A5E73B009ACE5A /* RootViewController.m in Sources */,
-				237526C419A71EDA0032F738 /* VkloginViewController.m in Sources */,
+				237526D319A737140032F738 /* VkLoginViewController1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

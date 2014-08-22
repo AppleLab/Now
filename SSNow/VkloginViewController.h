@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface VkloginViewController : UIViewController
+
 id delegate;
 UIWebView *vkWebView;
 NSString *appID;

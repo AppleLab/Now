@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "vkLoginViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -15,10 +16,6 @@
 @implementation ViewController
 @synthesize appID, textField, authButton;
 
-- (void)dealloc {
-    [appID release];
-    [super dealloc];
-}
 
 - (void)didReceiveMemoryWarning
 {

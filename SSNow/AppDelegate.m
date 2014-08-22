@@ -9,10 +9,18 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+@synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     // Override point for customization after application launch.
+        UINavigationController *navigation = [[UINavigationController alloc] init]; //создаём контроллер навигации
+        VkLoginViewController1 *auth = [[VkLoginViewController1 alloc] init]; //создаём вид авторизации
+        [navigation pushViewController:auth animated:NO]; //передаём вид авторизации и показываем его без анимации, так как при первом появлении нам анимация ни к чему.
+        [_window addSubview:navigation.view]; //добавляем навигационный контроллер в наш вид
+        [self.window makeKeyAndVisible]; //
+    
     return YES;
 }
 
