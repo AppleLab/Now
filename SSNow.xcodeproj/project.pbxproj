@@ -23,6 +23,8 @@
 		23DB6D7319A5E73B009ACE5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DB6D4F19A5E73B009ACE5A /* UIKit.framework */; };
 		23DB6D7B19A5E73B009ACE5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23DB6D7919A5E73B009ACE5A /* InfoPlist.strings */; };
 		23DB6D7D19A5E73B009ACE5A /* SSNowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DB6D7C19A5E73B009ACE5A /* SSNowTests.m */; };
+		23DB6D8B19A5EB32009ACE5A /* f.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23DB6D8A19A5EB32009ACE5A /* f.jpg */; };
+		23DB6D8D19A5EBA8009ACE5A /* VK2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23DB6D8C19A5EBA8009ACE5A /* VK2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		23DB6D7819A5E73B009ACE5A /* SSNowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SSNowTests-Info.plist"; sourceTree = "<group>"; };
 		23DB6D7A19A5E73B009ACE5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		23DB6D7C19A5E73B009ACE5A /* SSNowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSNowTests.m; sourceTree = "<group>"; };
+		23DB6D8A19A5EB32009ACE5A /* f.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f.jpg; sourceTree = "<group>"; };
+		23DB6D8C19A5EBA8009ACE5A /* VK2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VK2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 		23DB6D5219A5E73B009ACE5A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				23DB6D8C19A5EBA8009ACE5A /* VK2.jpg */,
+				23DB6D8A19A5EB32009ACE5A /* f.jpg */,
 				23DB6D5319A5E73B009ACE5A /* SSNow-Info.plist */,
 				23DB6D5419A5E73B009ACE5A /* InfoPlist.strings */,
 				23DB6D5719A5E73B009ACE5A /* main.m */,
@@ -240,6 +246,8 @@
 			files = (
 				23DB6D6A19A5E73B009ACE5A /* Images.xcassets in Resources */,
 				23DB6D5619A5E73B009ACE5A /* InfoPlist.strings in Resources */,
+				23DB6D8D19A5EBA8009ACE5A /* VK2.jpg in Resources */,
+				23DB6D8B19A5EB32009ACE5A /* f.jpg in Resources */,
 				23DB6D6819A5E73B009ACE5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
