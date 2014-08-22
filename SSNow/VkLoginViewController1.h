@@ -13,7 +13,6 @@
 UIWebView *authView;
 UIActivityIndicatorView *indicator;
 }
-@property (weak, nonatomic) IBOutlet UILabel *lable;
 @property (nonatomic, retain) IBOutlet UIWebView *authView;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *indicator;
 @end

@@ -1,5 +1,5 @@
 //
-//  VKViewController.h
+//  NewVkViewController.h
 //  SSNow
 //
 //  Created by itisioslab on 22.08.14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VKViewController : UIViewController
+@interface NewVkViewController : UIViewController
 
 @end

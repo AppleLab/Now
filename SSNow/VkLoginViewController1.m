@@ -7,7 +7,6 @@
 //
 
 #import "VkLoginViewController1.h"
-#import "VKViewController.h"
 @interface VkLoginViewController1 ()
 
 @end
@@ -39,16 +38,19 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     if ([authView.request.URL.absoluteString rangeOfString:@"access_token"].location != NSNotFound) {
         authView.hidden = YES;
-      
+        NSString *secret = [authView.request.URL.absoluteString getStringBetweenString:@"access_token" andString:@"&"]; //извлекаем из ответа token
+        [[NSUserDefaults standardUserDefaults] setObject:secret forKey:@"access_token"];
+        [[NSUserDefaults standardUserDefaults]  synchronize];
+        
     } else if ([authView.request.URL.absoluteString rangeOfString:@"error"].location != NSNotFound) {
         authView.hidden = YES;
-        
         NSLog(@"%@", authView.request.URL.absoluteString); //выводим ошибку
     } else {
         authView.hidden = NO; //показываем окно авторизации
     }
     [indicator stopAnimating];
 }
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

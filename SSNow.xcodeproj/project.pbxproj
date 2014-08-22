@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		237526D319A737140032F738 /* VkLoginViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 237526D219A737140032F738 /* VkLoginViewController1.m */; };
 		237526D619A739DD0032F738 /* NSString+StringBetween.m in Sources */ = {isa = PBXBuildFile; fileRef = 237526D519A739DD0032F738 /* NSString+StringBetween.m */; };
-		237526DC19A748C10032F738 /* VKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237526DB19A748C10032F738 /* VKViewController.m */; };
+		237526E119A754B90032F738 /* NewVkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237526E019A754B90032F738 /* NewVkViewController.m */; };
+		237526E319A761FC0032F738 /* O2JpLGLjSJ0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 237526E219A761FC0032F738 /* O2JpLGLjSJ0.jpg */; };
 		23DB6D4C19A5E73B009ACE5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DB6D4B19A5E73B009ACE5A /* Foundation.framework */; };
 		23DB6D4E19A5E73B009ACE5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DB6D4D19A5E73B009ACE5A /* CoreGraphics.framework */; };
 		23DB6D5019A5E73B009ACE5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DB6D4F19A5E73B009ACE5A /* UIKit.framework */; };
@@ -45,8 +46,9 @@
 		237526D219A737140032F738 /* VkLoginViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VkLoginViewController1.m; sourceTree = "<group>"; };
 		237526D419A739DD0032F738 /* NSString+StringBetween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringBetween.h"; sourceTree = "<group>"; };
 		237526D519A739DD0032F738 /* NSString+StringBetween.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringBetween.m"; sourceTree = "<group>"; };
-		237526DA19A748C10032F738 /* VKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKViewController.h; sourceTree = "<group>"; };
-		237526DB19A748C10032F738 /* VKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKViewController.m; sourceTree = "<group>"; };
+		237526DF19A754B90032F738 /* NewVkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewVkViewController.h; sourceTree = "<group>"; };
+		237526E019A754B90032F738 /* NewVkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewVkViewController.m; sourceTree = "<group>"; };
+		237526E219A761FC0032F738 /* O2JpLGLjSJ0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = O2JpLGLjSJ0.jpg; sourceTree = "<group>"; };
 		23DB6D4819A5E73B009ACE5A /* SSNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DB6D4B19A5E73B009ACE5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		23DB6D4D19A5E73B009ACE5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,6 +133,7 @@
 		23DB6D5119A5E73B009ACE5A /* SSNow */ = {
 			isa = PBXGroup;
 			children = (
+				237526E219A761FC0032F738 /* O2JpLGLjSJ0.jpg */,
 				23DB6D5A19A5E73B009ACE5A /* AppDelegate.h */,
 				23DB6D5B19A5E73B009ACE5A /* AppDelegate.m */,
 				23DB6D5D19A5E73B009ACE5A /* RootViewController.h */,
@@ -146,8 +149,8 @@
 				237526D219A737140032F738 /* VkLoginViewController1.m */,
 				237526D419A739DD0032F738 /* NSString+StringBetween.h */,
 				237526D519A739DD0032F738 /* NSString+StringBetween.m */,
-				237526DA19A748C10032F738 /* VKViewController.h */,
-				237526DB19A748C10032F738 /* VKViewController.m */,
+				237526DF19A754B90032F738 /* NewVkViewController.h */,
+				237526E019A754B90032F738 /* NewVkViewController.m */,
 			);
 			path = SSNow;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				23DB6D8D19A5EBA8009ACE5A /* VK2.jpg in Resources */,
 				23DB6D8B19A5EB32009ACE5A /* f.jpg in Resources */,
 				23DB6D6819A5E73B009ACE5A /* Main.storyboard in Resources */,
+				237526E319A761FC0032F738 /* O2JpLGLjSJ0.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +288,10 @@
 			files = (
 				237526D619A739DD0032F738 /* NSString+StringBetween.m in Sources */,
 				23DB6D6219A5E73B009ACE5A /* DataViewController.m in Sources */,
+				237526E119A754B90032F738 /* NewVkViewController.m in Sources */,
 				23DB6D5C19A5E73B009ACE5A /* AppDelegate.m in Sources */,
 				23DB6D6519A5E73B009ACE5A /* ModelController.m in Sources */,
 				23DB6D5819A5E73B009ACE5A /* main.m in Sources */,
-				237526DC19A748C10032F738 /* VKViewController.m in Sources */,
 				23DB6D5F19A5E73B009ACE5A /* RootViewController.m in Sources */,
 				237526D319A737140032F738 /* VkLoginViewController1.m in Sources */,
 			);
