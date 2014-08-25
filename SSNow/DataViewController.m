@@ -7,7 +7,7 @@
 //
 
 #import "DataViewController.h"
-
+#import "VkLoginViewController1.h"
 @interface DataViewController ()
 
 @end
@@ -18,6 +18,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSString *name = [[NSUserDefaults standardUserDefaults]objectForKey:@"first_name"];
+    NSString *lastname = [[NSUserDefaults standardUserDefaults]objectForKey:@"last_name"];
+   NSString *onlinestr = [[NSUserDefaults standardUserDefaults]objectForKey:@"online"];
+    self.namelabel.text = [NSString stringWithFormat:@"%@ %@",name,lastname];
+    self.labelForStatus.text = onlinestr;
+    self.UserPhoto.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[NSUserDefaults standardUserDefaults]objectForKey:@"photo_50"]]]];
+
+    self.namelabel.numberOfLines = 0;
+    [self.namelabel sizeToFit];
+    NSLog(@"I'm here");
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,7 +39,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.dataLabel.text = [self.dataObject description];
+   
 }
 
 @end

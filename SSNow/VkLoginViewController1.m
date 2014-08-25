@@ -26,26 +26,65 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     authView.hidden = YES;
     NSString *authString = @"http://api.vkontakte.ru/oauth/authorize?client_id=4517157&scope=friends,photos,groups&redirect_uri=http://api.vkontakte.ru/blank.html&display=touch&response_type=token";
     NSURL *authURL = [[NSURL alloc] initWithString:authString];
     NSURLRequest *authRequest = [[NSURLRequest alloc] initWithURL:authURL];
     [authView loadRequest:authRequest];
-
+   
+    
 }
 
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     if ([authView.request.URL.absoluteString rangeOfString:@"access_token"].location != NSNotFound) {
-        //authView.hidden = YES;
-        NSString *secret = [authView.request.URL.absoluteString getStringBetweenString:@"access_token" andString:@"&"]; //извлекаем из ответа token
+        authView.hidden = YES;
+        NSString *secret = [authView.request.URL.absoluteString getStringBetweenString:@"access_token=" andString:@"&"]; //извлекаем из ответа token
+        NSString *user_id;
+        NSRange range = [authView.request.URL.absoluteString rangeOfString:@"user_id"];
+        user_id = [authView.request.URL.absoluteString substringWithRange:NSMakeRange(range.location+8, authView.request.URL.absoluteString.length-range.location-8)]; //вырезаем id user-а
+        NSLog(@"user_id %@ %@",user_id,secret);
+        
         [[NSUserDefaults standardUserDefaults] setObject:secret forKey:@"access_token"];
         [[NSUserDefaults standardUserDefaults]  synchronize];
-        NSData *str = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://api.vk.com/method/users.get?user_id=27122641&v=5.24&access_token=e900817c077972e733cdf4706a7e6103ff27ed303fa6cf4750b1f011836e5b83b2f61746880cb0aba390e"]];
+        NSData *str = [NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://api.vk.com/method/users.get?user_id=%@&v=5.24&access_token=%@&fields=online,photo_50",user_id,secret]]];
+        
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:str options:NSJSONReadingMutableContainers error:nil];
-        NSLog(@"User_name: %@", [[[dict objectForKey:@"response"]objectAtIndex:0]objectForKey:@"first_name"]);
+       
+        
+        NSString *name = [[[dict objectForKey:@"response"]objectAtIndex:0]objectForKey:@"first_name"];
+        NSLog(@"First name %@",name);
+        [[NSUserDefaults standardUserDefaults] setObject:name forKey:@"first_name"];//передаем Имя пользователя
+        [[NSUserDefaults standardUserDefaults]  synchronize];
+        
+        NSString *lastname = [[[dict objectForKey:@"response"]objectAtIndex:0]objectForKey:@"last_name"];
+        NSLog(@"Last name %@",lastname);
+        [[NSUserDefaults standardUserDefaults] setObject:lastname forKey:@"last_name"];//передаем фамилию пользователя
+        [[NSUserDefaults standardUserDefaults]  synchronize];
+        
+        NSNumber *online_st = [[[dict objectForKey:@"response"]objectAtIndex:0]objectForKey:@"online"];
+        NSLog(@"Status %@",online_st);
+        if (online_st == 0) {
+            [[NSUserDefaults standardUserDefaults] setObject:@"Offline" forKey:@"online"];// Online or Not Online?
+        }
+        else{
+            [[NSUserDefaults standardUserDefaults] setObject:@"Online" forKey:@"online"];
+        }
+        [[NSUserDefaults standardUserDefaults]  synchronize];
+        
+        
+        NSString *photo_50 = [[[dict objectForKey:@"response"]objectAtIndex:0]objectForKey:@"photo_50"];
+        NSLog(@"Status %@",photo_50);
+        [[NSUserDefaults standardUserDefaults] setObject:photo_50 forKey:@"photo_50"];// Photo size 50
+        [[NSUserDefaults standardUserDefaults]  synchronize];
+        
+        
         [self performSegueWithIdentifier:@"segueAfterLogin" sender:self];
         
+       
+   
+                          
     } else if ([authView.request.URL.absoluteString rangeOfString:@"error"].location != NSNotFound) {
         authView.hidden = YES;
         NSLog(@"%@", authView.request.URL.absoluteString); //выводим ошибку

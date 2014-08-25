@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="8" y="-1362"/>
         </scene>
-        <!--View Controller - Item-->
+        <!--Data View Controller - Item-->
         <scene sceneID="sLc-bB-fRC">
             <objects>
-                <viewController id="U4e-16-iHx" sceneMemberID="viewController">
+                <viewController id="U4e-16-iHx" customClass="DataViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Iya-tS-YlA"/>
                         <viewControllerLayoutGuide type="bottom" id="HnH-x9-hN5"/>
@@ -57,17 +57,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d3C-IC-Wxo">
-                                <rect key="frame" x="122" y="49" width="76" height="76"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="d3C-IC-Wxo">
+                                <rect key="frame" x="114" y="43" width="92" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RfI-3w-rew">
-                                <rect key="frame" x="0.0" y="162" width="320" height="355"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="имя фамилия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0c-hm-w8D">
-                                <rect key="frame" x="20" y="133" width="280" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="X0c-hm-w8D">
+                                <rect key="frame" x="20" y="148" width="280" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSr-L7-bEa">
+                                <rect key="frame" x="236" y="43" width="64" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -77,10 +78,15 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Dm0-6Q-7e9"/>
                     <navigationItem key="navigationItem" id="IPz-By-Xgr"/>
+                    <connections>
+                        <outlet property="UserPhoto" destination="d3C-IC-Wxo" id="j28-mg-2GL"/>
+                        <outlet property="labelForStatus" destination="WSr-L7-bEa" id="FuM-S2-KSo"/>
+                        <outlet property="namelabel" destination="X0c-hm-w8D" id="Xov-rv-IfM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hZ-ch-o8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="530" y="-1354"/>
+            <point key="canvasLocation" x="521" y="-1353"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OTR-uB-lPx">
