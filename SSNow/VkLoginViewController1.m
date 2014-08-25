@@ -37,10 +37,14 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     if ([authView.request.URL.absoluteString rangeOfString:@"access_token"].location != NSNotFound) {
-        authView.hidden = YES;
+        //authView.hidden = YES;
         NSString *secret = [authView.request.URL.absoluteString getStringBetweenString:@"access_token" andString:@"&"]; //извлекаем из ответа token
         [[NSUserDefaults standardUserDefaults] setObject:secret forKey:@"access_token"];
         [[NSUserDefaults standardUserDefaults]  synchronize];
+        NSData *str = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://api.vk.com/method/users.get?user_id=27122641&v=5.24&access_token=e900817c077972e733cdf4706a7e6103ff27ed303fa6cf4750b1f011836e5b83b2f61746880cb0aba390e"]];
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:str options:NSJSONReadingMutableContainers error:nil];
+        NSLog(@"User_name: %@", [[[dict objectForKey:@"response"]objectAtIndex:0]objectForKey:@"first_name"]);
+        [self performSegueWithIdentifier:@"segueAfterLogin" sender:self];
         
     } else if ([authView.request.URL.absoluteString rangeOfString:@"error"].location != NSNotFound) {
         authView.hidden = YES;
