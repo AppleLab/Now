@@ -11,6 +11,8 @@
 		237526D619A739DD0032F738 /* NSString+StringBetween.m in Sources */ = {isa = PBXBuildFile; fileRef = 237526D519A739DD0032F738 /* NSString+StringBetween.m */; };
 		237526E119A754B90032F738 /* NewVkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237526E019A754B90032F738 /* NewVkViewController.m */; };
 		237526E319A761FC0032F738 /* O2JpLGLjSJ0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 237526E219A761FC0032F738 /* O2JpLGLjSJ0.jpg */; };
+		238AB32F19AB1AE5003AFAF1 /* libVKSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 238AB32C19AB1AB4003AFAF1 /* libVKSdk.a */; };
+		238AB33219AB1B2D003AFAF1 /* UserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 238AB33119AB1B2D003AFAF1 /* UserProfileViewController.m */; };
 		23DB6D4C19A5E73B009ACE5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DB6D4B19A5E73B009ACE5A /* Foundation.framework */; };
 		23DB6D4E19A5E73B009ACE5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DB6D4D19A5E73B009ACE5A /* CoreGraphics.framework */; };
 		23DB6D5019A5E73B009ACE5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DB6D4F19A5E73B009ACE5A /* UIKit.framework */; };
@@ -32,6 +34,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		238AB32B19AB1AB4003AFAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 238AB32619AB1AB4003AFAF1 /* sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3C7542D182133CC00964716;
+			remoteInfo = VKSdk;
+		};
+		238AB32D19AB1AB4003AFAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 238AB32619AB1AB4003AFAF1 /* sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3BACC401865905B003158DA;
+			remoteInfo = VKSdkResources;
+		};
 		23DB6D7419A5E73B009ACE5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 23DB6D4019A5E73B009ACE5A /* Project object */;
@@ -49,6 +65,9 @@
 		237526DF19A754B90032F738 /* NewVkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewVkViewController.h; sourceTree = "<group>"; };
 		237526E019A754B90032F738 /* NewVkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewVkViewController.m; sourceTree = "<group>"; };
 		237526E219A761FC0032F738 /* O2JpLGLjSJ0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = O2JpLGLjSJ0.jpg; sourceTree = "<group>"; };
+		238AB32619AB1AB4003AFAF1 /* sdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sdk.xcodeproj; path = ../sdk/sdk.xcodeproj; sourceTree = "<group>"; };
+		238AB33019AB1B2D003AFAF1 /* UserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileViewController.h; sourceTree = SOURCE_ROOT; };
+		238AB33119AB1B2D003AFAF1 /* UserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileViewController.m; sourceTree = SOURCE_ROOT; };
 		23DB6D4819A5E73B009ACE5A /* SSNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DB6D4B19A5E73B009ACE5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		23DB6D4D19A5E73B009ACE5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -81,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				238AB32F19AB1AE5003AFAF1 /* libVKSdk.a in Frameworks */,
 				23DB6D4E19A5E73B009ACE5A /* CoreGraphics.framework in Frameworks */,
 				23DB6D5019A5E73B009ACE5A /* UIKit.framework in Frameworks */,
 				23DB6D4C19A5E73B009ACE5A /* Foundation.framework in Frameworks */,
@@ -100,9 +120,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		238AB32719AB1AB4003AFAF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				238AB32C19AB1AB4003AFAF1 /* libVKSdk.a */,
+				238AB32E19AB1AB4003AFAF1 /* VKSdkResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		23DB6D3F19A5E73B009ACE5A = {
 			isa = PBXGroup;
 			children = (
+				238AB32619AB1AB4003AFAF1 /* sdk.xcodeproj */,
 				23DB6D5119A5E73B009ACE5A /* SSNow */,
 				23DB6D7619A5E73B009ACE5A /* SSNowTests */,
 				23DB6D4A19A5E73B009ACE5A /* Frameworks */,
@@ -151,6 +181,8 @@
 				237526D519A739DD0032F738 /* NSString+StringBetween.m */,
 				237526DF19A754B90032F738 /* NewVkViewController.h */,
 				237526E019A754B90032F738 /* NewVkViewController.m */,
+				238AB33019AB1B2D003AFAF1 /* UserProfileViewController.h */,
+				238AB33119AB1B2D003AFAF1 /* UserProfileViewController.m */,
 			);
 			path = SSNow;
 			sourceTree = "<group>";
@@ -249,6 +281,12 @@
 			mainGroup = 23DB6D3F19A5E73B009ACE5A;
 			productRefGroup = 23DB6D4919A5E73B009ACE5A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 238AB32719AB1AB4003AFAF1 /* Products */;
+					ProjectRef = 238AB32619AB1AB4003AFAF1 /* sdk.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				23DB6D4719A5E73B009ACE5A /* SSNow */,
@@ -256,6 +294,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		238AB32C19AB1AB4003AFAF1 /* libVKSdk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVKSdk.a;
+			remoteRef = 238AB32B19AB1AB4003AFAF1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		238AB32E19AB1AB4003AFAF1 /* VKSdkResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = VKSdkResources.bundle;
+			remoteRef = 238AB32D19AB1AB4003AFAF1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		23DB6D4619A5E73B009ACE5A /* Resources */ = {
@@ -286,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				238AB33219AB1B2D003AFAF1 /* UserProfileViewController.m in Sources */,
 				237526D619A739DD0032F738 /* NSString+StringBetween.m in Sources */,
 				23DB6D6219A5E73B009ACE5A /* DataViewController.m in Sources */,
 				237526E119A754B90032F738 /* NewVkViewController.m in Sources */,
