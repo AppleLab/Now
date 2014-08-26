@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		236D7A7919AB49F300D0E8FE /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 236D7A7819AB49F300D0E8FE /* UserViewController.m */; };
+		236D7A7B19AC9A4500D0E8FE /* Now.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 236D7A7A19AC9A4500D0E8FE /* Now.jpg */; };
+		236D7A7D19AC9A7C00D0E8FE /* fon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 236D7A7C19AC9A7C00D0E8FE /* fon.jpg */; };
+		236D7A7F19ACA29600D0E8FE /* 0gsEM1ejMiw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 236D7A7E19ACA29600D0E8FE /* 0gsEM1ejMiw.jpg */; };
+		236D7A8119ACA2A000D0E8FE /* m5ovWvz8SfQ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 236D7A8019ACA2A000D0E8FE /* m5ovWvz8SfQ.jpg */; };
+		236D7A8319ACA2A900D0E8FE /* yeGv2M844-g.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 236D7A8219ACA2A900D0E8FE /* yeGv2M844-g.jpg */; };
 		237526D319A737140032F738 /* VkLoginViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 237526D219A737140032F738 /* VkLoginViewController1.m */; };
 		237526D619A739DD0032F738 /* NSString+StringBetween.m in Sources */ = {isa = PBXBuildFile; fileRef = 237526D519A739DD0032F738 /* NSString+StringBetween.m */; };
 		237526E319A761FC0032F738 /* O2JpLGLjSJ0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 237526E219A761FC0032F738 /* O2JpLGLjSJ0.jpg */; };
@@ -44,6 +49,11 @@
 /* Begin PBXFileReference section */
 		236D7A7719AB49F300D0E8FE /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
 		236D7A7819AB49F300D0E8FE /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		236D7A7A19AC9A4500D0E8FE /* Now.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Now.jpg; path = ../../../Downloads/Now.jpg; sourceTree = "<group>"; };
+		236D7A7C19AC9A7C00D0E8FE /* fon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fon.jpg; path = ../../../Downloads/fon.jpg; sourceTree = "<group>"; };
+		236D7A7E19ACA29600D0E8FE /* 0gsEM1ejMiw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 0gsEM1ejMiw.jpg; path = ../../../Downloads/0gsEM1ejMiw.jpg; sourceTree = "<group>"; };
+		236D7A8019ACA2A000D0E8FE /* m5ovWvz8SfQ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = m5ovWvz8SfQ.jpg; path = ../../../Downloads/m5ovWvz8SfQ.jpg; sourceTree = "<group>"; };
+		236D7A8219ACA2A900D0E8FE /* yeGv2M844-g.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "yeGv2M844-g.jpg"; path = "../../../Downloads/yeGv2M844-g.jpg"; sourceTree = "<group>"; };
 		237526D119A737140032F738 /* VkLoginViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VkLoginViewController1.h; sourceTree = "<group>"; };
 		237526D219A737140032F738 /* VkLoginViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VkLoginViewController1.m; sourceTree = "<group>"; };
 		237526D419A739DD0032F738 /* NSString+StringBetween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringBetween.h"; sourceTree = "<group>"; };
@@ -156,6 +166,11 @@
 		23DB6D5219A5E73B009ACE5A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				236D7A8219ACA2A900D0E8FE /* yeGv2M844-g.jpg */,
+				236D7A8019ACA2A000D0E8FE /* m5ovWvz8SfQ.jpg */,
+				236D7A7E19ACA29600D0E8FE /* 0gsEM1ejMiw.jpg */,
+				236D7A7C19AC9A7C00D0E8FE /* fon.jpg */,
+				236D7A7A19AC9A4500D0E8FE /* Now.jpg */,
 				23DB6D8C19A5EBA8009ACE5A /* VK2.jpg */,
 				23DB6D8A19A5EB32009ACE5A /* f.jpg */,
 				23DB6D5319A5E73B009ACE5A /* SSNow-Info.plist */,
@@ -263,10 +278,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				23DB6D6A19A5E73B009ACE5A /* Images.xcassets in Resources */,
+				236D7A7D19AC9A7C00D0E8FE /* fon.jpg in Resources */,
 				23DB6D5619A5E73B009ACE5A /* InfoPlist.strings in Resources */,
+				236D7A7F19ACA29600D0E8FE /* 0gsEM1ejMiw.jpg in Resources */,
+				236D7A7B19AC9A4500D0E8FE /* Now.jpg in Resources */,
+				236D7A8319ACA2A900D0E8FE /* yeGv2M844-g.jpg in Resources */,
 				23DB6D8D19A5EBA8009ACE5A /* VK2.jpg in Resources */,
 				23DB6D8B19A5EB32009ACE5A /* f.jpg in Resources */,
 				23DB6D6819A5E73B009ACE5A /* Main.storyboard in Resources */,
+				236D7A8119ACA2A000D0E8FE /* m5ovWvz8SfQ.jpg in Resources */,
 				237526E319A761FC0032F738 /* O2JpLGLjSJ0.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

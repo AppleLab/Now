@@ -46,12 +46,17 @@
         user_id = [authView.request.URL.absoluteString substringWithRange:NSMakeRange(range.location+8, authView.request.URL.absoluteString.length-range.location-8)]; //вырезаем id user-а
         NSLog(@"user_id %@ %@",user_id,secret);
         
+        
         [[NSUserDefaults standardUserDefaults] setObject:secret forKey:@"access_token"];
         [[NSUserDefaults standardUserDefaults]  synchronize];
         NSData *str = [NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://api.vk.com/method/users.get?user_id=%@&v=5.24&access_token=%@&fields=online,photo_50",user_id,secret]]];
+        NSData *str1 = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://api.vk.com/method/wall.get?domain=hellonow&offset=10&count=10&filter=all&extended=0"]];
+
+         NSDictionary *dict1 = [NSJSONSerialization JSONObjectWithData:str1 options:NSJSONReadingMutableContainers error:nil];
+        
         
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:str options:NSJSONReadingMutableContainers error:nil];
-       
+    
         
         NSString *name = [[[dict objectForKey:@"response"]objectAtIndex:0]objectForKey:@"first_name"];
         NSLog(@"First name %@",name);
@@ -79,6 +84,13 @@
         [[NSUserDefaults standardUserDefaults] setObject:photo_50 forKey:@"photo_50"];// Photo size 50
         [[NSUserDefaults standardUserDefaults]  synchronize];
         
+        NSDictionary *first = [[NSDictionary alloc]initWithObjects:[NSArray arrayWithObjects:@"text",@"13", nil] forKeys:[NSArray arrayWithObjects:@"description", @"likes", nil]];
+        NSLog(@"Dictionary %@",first);
+        
+        NSDictionary *second = [[NSDictionary alloc]initWithObjects:[NSArray arrayWithObjects:@"VK2.jpg", nil] forKeys:[NSArray arrayWithObjects:@"Img", nil]];
+        NSLog(@"Img %@",second);
+        
+        NSArray *First = [NSArray arrayWithObjects:first,second, nil];
         
         [self performSegueWithIdentifier:@"segueAfterLogin" sender:self];
         
