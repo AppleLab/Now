@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PxF-Ax-wPy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PxF-Ax-wPy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -39,7 +39,7 @@
             </objects>
             <point key="canvasLocation" x="8" y="-1362"/>
         </scene>
-        <!--Data View Controller - Item-->
+        <!--Data View Controller - My-->
         <scene sceneID="sLc-bB-fRC">
             <objects>
                 <viewController id="U4e-16-iHx" customClass="DataViewController" sceneMemberID="viewController">
@@ -145,7 +145,7 @@
                             <constraint firstItem="0gp-cX-KPo" firstAttribute="leading" secondItem="O95-g0-sNP" secondAttribute="leading" id="vxH-5B-wGz"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Dm0-6Q-7e9"/>
+                    <tabBarItem key="tabBarItem" title="My" image="111-user.png" id="Dm0-6Q-7e9"/>
                     <navigationItem key="navigationItem" id="IPz-By-Xgr"/>
                     <connections>
                         <outlet property="UserPhoto" destination="d3C-IC-Wxo" id="j28-mg-2GL"/>
@@ -920,11 +920,11 @@
             </objects>
             <point key="canvasLocation" x="2103" y="952"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Friends-->
         <scene sceneID="HiE-C7-S8I">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sPR-J8-JoR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="34G-RP-5rE"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="88-beer-mug.png" id="34G-RP-5rE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Sg-UC-h4w">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -939,11 +939,11 @@
             </objects>
             <point key="canvasLocation" x="1052" y="-407"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - All-->
         <scene sceneID="uI8-le-8IK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZFT-y2-p8t" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Z3G-E7-GVH"/>
+                    <tabBarItem key="tabBarItem" title="All" image="112-group.png" id="Z3G-E7-GVH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PP8-0V-ov0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -961,9 +961,12 @@
     </scenes>
     <resources>
         <image name="0gsEM1ejMiw.jpg" width="807" height="807"/>
+        <image name="111-user.png" width="24" height="21"/>
+        <image name="112-group.png" width="32" height="21"/>
         <image name="46D8--Xtlas.jpg" width="604" height="604"/>
         <image name="4yf0oAxbBaM.jpg" width="200" height="200"/>
         <image name="6orzW59pNPU.jpg" width="200" height="308"/>
+        <image name="88-beer-mug.png" width="22" height="27"/>
         <image name="CB7PeP2FObM.jpg" width="200" height="200"/>
         <image name="H-FqpmhsLEs.jpg" width="604" height="454"/>
         <image name="IpOoAykt2ng.jpg" width="200" height="300"/>
