@@ -49,10 +49,8 @@
         
         [[NSUserDefaults standardUserDefaults] setObject:secret forKey:@"access_token"];
         [[NSUserDefaults standardUserDefaults]  synchronize];
-        NSData *str = [NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://api.vk.com/method/users.get?user_id=%@&v=5.24&access_token=%@&fields=online,photo_50",user_id,secret]]];
-        NSData *str1 = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://api.vk.com/method/wall.get?domain=hellonow&offset=10&count=10&filter=all&extended=0"]];
-
-         NSDictionary *dict1 = [NSJSONSerialization JSONObjectWithData:str1 options:NSJSONReadingMutableContainers error:nil];
+        NSData *str = [NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://api.vk.com/method/users.get?user_id=%@&v=5.24&access_token=%@&fields=online,photo_200",user_id,secret]]];
+        NSLog(@"Data%@",str);
         
         
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:str options:NSJSONReadingMutableContainers error:nil];
@@ -79,18 +77,12 @@
         [[NSUserDefaults standardUserDefaults]  synchronize];
         
         
-        NSString *photo_50 = [[[dict objectForKey:@"response"]objectAtIndex:0]objectForKey:@"photo_50"];
+        NSString *photo_50 = [[[dict objectForKey:@"response"]objectAtIndex:0]objectForKey:@"photo_200"];
         NSLog(@"Status %@",photo_50);
-        [[NSUserDefaults standardUserDefaults] setObject:photo_50 forKey:@"photo_50"];// Photo size 50
+        [[NSUserDefaults standardUserDefaults] setObject:photo_50 forKey:@"photo_200"];// Photo size 50
         [[NSUserDefaults standardUserDefaults]  synchronize];
         
-        NSDictionary *first = [[NSDictionary alloc]initWithObjects:[NSArray arrayWithObjects:@"text",@"13", nil] forKeys:[NSArray arrayWithObjects:@"description", @"likes", nil]];
-        NSLog(@"Dictionary %@",first);
-        
-        NSDictionary *second = [[NSDictionary alloc]initWithObjects:[NSArray arrayWithObjects:@"VK2.jpg", nil] forKeys:[NSArray arrayWithObjects:@"Img", nil]];
-        NSLog(@"Img %@",second);
-        
-        NSArray *First = [NSArray arrayWithObjects:first,second, nil];
+    
         
         [self performSegueWithIdentifier:@"segueAfterLogin" sender:self];
         

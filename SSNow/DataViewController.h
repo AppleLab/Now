@@ -17,5 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *userImgs;
 
 @property (weak, nonatomic) IBOutlet UIImageView *UserPhoto;
+@property (weak, nonatomic) IBOutlet UIImageView *profilePhoto1;
+@property (weak, nonatomic) IBOutlet UIImageView *profilephoto;
 
 @end

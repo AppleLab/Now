@@ -21,10 +21,14 @@
     NSString *name = [[NSUserDefaults standardUserDefaults]objectForKey:@"first_name"];
     NSString *lastname = [[NSUserDefaults standardUserDefaults]objectForKey:@"last_name"];
    NSString *onlinestr = [[NSUserDefaults standardUserDefaults]objectForKey:@"online"];
+    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:[[NSUserDefaults standardUserDefaults]objectForKey:@"photo_200"]]];
     self.namelabel.text = [NSString stringWithFormat:@"%@ %@",name,lastname];
     self.labelForStatus.text = onlinestr;
-    self.UserPhoto.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[NSUserDefaults standardUserDefaults]objectForKey:@"photo_50"]]]];
-
+    self.UserPhoto.image = [UIImage imageWithData:data];
+    self.profilephoto.image = [UIImage imageWithData:data];
+    self.profilePhoto1.image = [UIImage imageWithData:data];
+    
+    
     self.namelabel.numberOfLines = 0;
     [self.namelabel sizeToFit];
     NSLog(@"I'm here");
