@@ -26,10 +26,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>vk+4517157</string>
+			<string>vk4517157</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>vk+4517157</string>
+				<string>vk4517157</string>
 			</array>
 		</dict>
 	</array>
