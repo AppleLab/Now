@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E81AC424-CDD4-4C58-B1A9-3413A407225F</string>
+	<string>36C50254-99C3-4C48-AE68-85C2C8D9E6E3</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SSNow</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/AppleLab/Now.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SSNow.xcodeproj/project.xcworkspace</string>
+	<string>SSNow/SSNow.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F779BEE8-822A-4CE1-9969-242A94B1A1F5</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/AppleLab/Now.git</string>
